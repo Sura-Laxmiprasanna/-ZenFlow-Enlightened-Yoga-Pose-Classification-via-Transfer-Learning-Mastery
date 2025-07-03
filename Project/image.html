@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Pose Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #1f2c3c;
+            padding: 15px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .upload-section {
+            background-color: #19c37d;
+            padding: 50px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .upload-section input {
+            margin: 10px;
+        }
+        .prediction {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span><b>YOGA POSE</b></span>
+        <a href="#">HOME</a>
+        <a href="#">VIDEO</a>
+    </div>
+    <div class="upload-section">
+        <input type="file" id="fileInput">
+        <button onclick="uploadImage()">Upload</button>
+        <p class="prediction">Predicted Yoga pose is :</p>
+    </div>
+    <div>
+        <h2>CONTACT ME</h2>
+    </div>
+    <script>
+        function uploadImage() {
+            alert("File uploaded successfully! (Functionality to be implemented)");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Pose Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #1f2c3c;
+            padding: 10px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .navbar a.active {
+            background-color: #19c37d;
+            border-radius: 5px;
+        }
+        .models {
+            margin-top: 30px;
+        }
+        .models a {
+            display: inline-block;
+            margin: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            width: 50%;
+            text-align: center;
+            border-radius: 5px;
+            position: relative;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span><b>YOGA POSE</b></span>
+        <a href="#">ABOUT</a>
+        <a href="#" class="active">MODELS</a>
+        <a href="#">CONTACT</a>
+        <a href="#">IMAGE</a>
+        <a href="#">VIDEO</a>
+    </div>
+
+    <div class="models">
+        <h2>MODELS</h2>
+        <a onclick="openModal('inceptionModal')">Inception V3</a>
+        <a onclick="openModal('xceptionModal')">Xception</a>
+        <a onclick="openModal('resnetModal')">ResNet 50</a>
+        <a onclick="openModal('vggModal')">VGG 19</a>
+    </div>
+
+    <!-- Modals -->
+    <div id="inceptionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('inceptionModal')">&times;</span>
+            <h2>INCEPTION V3</h2>
+            <img src="C:\Users\SRIPATHI PAVANI\Desktop\inception.png" alt="Inception V3 Architecture">
+        </div>
+    </div>
+
+    <div id="xceptionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('xceptionModal')">&times;</span>
+            <h2>XCEPTION</h2>
+            <img src="C:\Users\SRIPATHI PAVANI\Desktop\xception.png" alt="Xception Architecture">
+        </div>
+    </div>
+
+    <div id="resnetModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('resnetModal')">&times;</span>
+            <h2>ResNet 50</h2>
+            <img src="C:\Users\SRIPATHI PAVANI\Desktop\resnet.png" alt="ResNet 50 Architecture">
+        </div>
+    </div>
+
+    <div id="vggModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('vggModal')">&times;</span>
+            <h2>VGG 19</h2>
+            <img src="C:\Users\SRIPATHI PAVANI\Desktop\vgg19.png" alt="VGG 19 Architecture">
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
+</body>
+</html>

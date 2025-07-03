@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            background-color: #222831;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #1b2a38;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .active {
+            background-color: #00adb5;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><strong>YOGA POSE</strong></div>
+        <div>
+            <a href="#">ABOUT</a>
+            <a href="#">MODELS</a>
+            <a href="#" class="active">CONTACT</a>
+            <a href="#">IMAGE</a>
+            <a href="#">VIDEO</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>CONTACT ME</h1>
+        <div class="form-group">
+            <input type="text" placeholder="Full name">
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Email address">
+        </div>
+        <div class="form-group">
+            <input type="tel" placeholder="Phone number">
+        </div>
+        <div class="form-group">
+            <textarea rows="4" placeholder="Message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </div>
+</body>
+</html>
